@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competição de Futsal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Competição de Futsal</h1>
+        <p>Informe o resultado das 6 partidas:</p>
+        
+        <!-- Formulário para inserir os resultados das 6 partidas -->
+        <form id="resultadoForm">
+            <div class="partida">
+                <label for="partida1">Partida 1:</label>
+                <select id="partida1" required>
+                    <option value="ganhou">Ganhou</option>
+                    <option value="perdeu">Perdeu</option>
+                </select>
+            </div>
+            <div class="partida">
+                <label for="partida2">Partida 2:</label>
+                <select id="partida2" required>
+                    <option value="ganhou">Ganhou</option>
+                    <option value="perdeu">Perdeu</option>
+                </select>
+            </div>
+            <div class="partida">
+                <label for="partida3">Partida 3:</label>
+                <select id="partida3" required>
+                    <option value="ganhou">Ganhou</option>
+                    <option value="perdeu">Perdeu</option>
+                </select>
+            </div>
+            <div class="partida">
+                <label for="partida4">Partida 4:</label>
+                <select id="partida4" required>
+                    <option value="ganhou">Ganhou</option>
+                    <option value="perdeu">Perdeu</option>
+                </select>
+            </div>
+            <div class="partida">
+                <label for="partida5">Partida 5:</label>
+                <select id="partida5" required>
+                    <option value="ganhou">Ganhou</option>
+                    <option value="perdeu">Perdeu</option>
+                </select>
+            </div>
+            <div class="partida">
+                <label for="partida6">Partida 6:</label>
+                <select id="partida6" required>
+                    <option value="ganhou">Ganhou</option>
+                    <option value="perdeu">Perdeu</option>
+                </select>
+            </div>
+            
+            <button type="submit">Calcular Pontuação</button>
+        </form>
+        
+        <!-- Resultados -->
+        <div id="resultado">
+            <h2>Resultado da Competição</h2>
+            <p id="pontuacao"></p>
+            <p id="campeao"></p>
+        </div>
+    </div>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
